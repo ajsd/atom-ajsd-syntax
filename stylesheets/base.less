@@ -66,7 +66,7 @@
 }
 
 .comment {
-  color: @light-gray;
+  color: @comment;
 }
 
 .entity {
@@ -81,10 +81,10 @@
 }
 
 .keyword {
-  color: @purple;
+  color: @keyword;
 
   &.control {
-    color: @purple;
+    color: @keyword;
   }
 
   &.operator {
@@ -92,7 +92,7 @@
   }
 
   &.other.special-method {
-    color: @blue;
+    color: @keyword;
   }
 
   &.other.unit {
@@ -101,7 +101,7 @@
 }
 
 .storage {
-  color: @purple;
+  color: @class;
 }
 
 .constant {
@@ -125,14 +125,14 @@
 }
 
 .variable {
-  color: @red;
+  color: @variable;
 
   &.interpolation {
-    color: darken(@red, 10%);
+    color: darken(@variable, 20%);
   }
 
   &.parameter.function {
-    color: @syntax-text-color;
+    color: @parameter;
   }
 }
 
@@ -142,7 +142,7 @@
 }
 
 .string {
-  color: @green;
+  color: @string;
 
 
   &.regexp {
@@ -161,12 +161,18 @@
 .punctuation {
   &.definition {
     &.comment {
-      color: @light-gray;
+      color: @comment;
     }
 
-    &.string,
-    &.variable,
-    &.parameters,
+    &.string {
+      color: @string;
+    }
+    &.variable {
+      color: @variable;
+    }
+    &.parameters {
+      color: @function;
+    }
     &.array {
       color: @syntax-text-color;
     }
@@ -199,10 +205,10 @@
   }
 
   &.function  {
-    color: @cyan;
+    color: @function;
 
     &.any-method {
-      color: @blue;
+      color: @function;
     }
   }
 }
