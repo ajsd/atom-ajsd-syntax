@@ -1,0 +1,11 @@
+{
+  "name": "atom-ajsd-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "Atom theme for AJSD styles",
+  "repository": "https://github.com/atom/atom-ajsd-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  }
+}
